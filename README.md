@@ -1,6 +1,8 @@
 # vue-prosemirror-2
 
-> Plugin to integrate prosemirror with Vue 2
+Plugin to integrate prosemirror with Vue 2
+
+[![Build Status](https://travis-ci.org/eljefedelrodeodeljefe/vue-prosemirror-2.svg?branch=master)](https://travis-ci.org/eljefedelrodeodeljefe/vue-prosemirror-2)
 
 ## Build Setup
 
