@@ -15,7 +15,8 @@
     "dev:serve": "http-server -o -c 1 -a localhost",
     "dev": "npm-run-all --parallel dev:watchify dev:serve",
     "lint": "eslint index.js",
-    "test": "karma start karma.conf.js"
+    "test": "karma start karma.conf.js",
+    "deploy": "gh-pages-deploy"
   },
   "browserify": {
     "transform": [
@@ -45,6 +46,7 @@
     "eslint-plugin-html": "^1.5.2",
     "eslint-plugin-promise": "^2.0.1",
     "eslint-plugin-standard": "^2.0.0",
+    "gh-pages-deploy": "^0.4.2",
     "http-server": "^0.9.0",
     "jasmine-core": "^2.4.1",
     "karma": "^1.2.0",
