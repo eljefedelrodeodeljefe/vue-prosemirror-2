@@ -1,6 +1,6 @@
 {
   "name": "vue-prosemirror-2",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Plugin to integrate prosemirror with Vue 2",
   "author": "Robert Jefe Lindstaedt <robert.lindstaedt@gmail.com>",
   "licence": "MIT",
