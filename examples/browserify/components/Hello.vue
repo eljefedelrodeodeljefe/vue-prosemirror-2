@@ -25,18 +25,7 @@ export default {
 </script>
 
 <style scoped>
-
-</style>
-
-<style media="screen">
-
-
-</style>
-
-<style media="screen">
-
-</style>
-
-<style>
-
+section {
+  max-width: 50rem;
+}
 </style>

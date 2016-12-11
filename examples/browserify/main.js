@@ -5,6 +5,9 @@ import Vue from 'vue'
 import VueAnalytics from 'vue-ua'
 import App from './App.vue'
 import ProseMirror from '../../'
+const fs = require('fs')
+const insertCss = require('insert-css')
+insertCss(fs.readFileSync('./node_modules/normalize.css/normalize.css').toString())
 
 const pkg = require('../../package.json')
 

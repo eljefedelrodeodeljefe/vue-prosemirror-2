@@ -17,13 +17,14 @@
     "lint": "eslint index.js",
     "test": "karma start karma.conf.js",
     "deploy": "npm run build && gh-pages -d dist",
-    "build": "NODE_ENV=production browserify -g envify -p [ vueify/plugins/extract-css -o dist/build.css ] -e examples/browserify/main.js | uglifyjs -c warnings=false -m > dist/build.js",
+    "build": "NODE_ENV=production browserify -g envify -p [ vueify/plugins/extract-css -o dist/build.css ] -e examples/browserify/main.js | uglifyjs -c warnings=false -m > dist/build.js &&  postcss -c postcss.json",
     "postversion": "TAG=$(echo $(git describe --tags $(git rev-list --tags --max-count=1))) && git tag -a $TAG $TAG -f -m \"$(git log `git describe --tags --abbrev=0 HEAD^`..HEAD --oneline)\" && git push && git push --tags && npm run deploy"
   },
   "browserify": {
     "transform": [
       "babelify",
-      "vueify"
+      "vueify",
+      "brfs"
     ]
   },
   "browser": {
@@ -39,6 +40,7 @@
     "babel-preset-stage-2": "^6.0.0",
     "babel-runtime": "^6.0.0",
     "babelify": "^7.2.0",
+    "brfs": "^1.4.3",
     "browserify": "^13.1.0",
     "browserify-hmr": "^0.3.1",
     "cross-env": "^2.0.0",
@@ -56,8 +58,11 @@
     "karma-jasmine": "^1.0.2",
     "karma-phantomjs-launcher": "^1.0.0",
     "karma-spec-reporter": "0.0.26",
+    "normalize.css": "^5.0.0",
     "npm-run-all": "^2.3.0",
     "phantomjs-prebuilt": "^2.1.3",
+    "postcss-cli": "^2.6.0",
+    "postcss-cssnext": "^2.9.0",
     "prosemirror-example-setup": "^0.15.0",
     "prosemirror-markdown": "^0.15.0",
     "prosemirror-menu": "^0.15.0",
