@@ -302,8 +302,8 @@ exports.install = function (Vue, options) {
     name: 'prosemirror',
     template: `
       <div v-bind:class="name">
-        <div  v-bind:class="name" v-show="mode === 'editor' || mode ==='all'" id="editor"></div>
-        <textarea  v-bind:class="name" v-show="mode === 'markdown' || mode ==='all'" v-model="content.markdown"></textarea>
+        <div  v-bind:class="name" v-show="mode === 'editor' || mode ==='all'"></div>
+        <textarea v-bind:class="name" v-show="mode === 'markdown' || mode ==='all'" v-model="content.markdown"></textarea>
       </div>`,
     data () {
       return {
