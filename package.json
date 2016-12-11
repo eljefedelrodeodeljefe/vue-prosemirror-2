@@ -12,7 +12,7 @@
   "main": "./index.js",
   "scripts": {
     "dev:watchify": "watchify -vd -p browserify-hmr -e examples/browserify/main.js -o dist/build.js",
-    "dev:serve": "http-server -o -c 1 -a localhost",
+    "dev:serve": "cd dist && http-server -o -c 1 -a localhost",
     "dev": "npm-run-all --parallel dev:watchify dev:serve",
     "lint": "eslint index.js",
     "test": "karma start karma.conf.js",
