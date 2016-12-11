@@ -44,6 +44,7 @@ export default {
 
 <style scoped>
 section {
+  min-width: 30rem;
   max-width: 50rem;
 }
 
