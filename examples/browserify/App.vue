@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="http://vuejs.org/images/logo.png">
+    <img src="https://vuejs.org/images/logo.png">
     <hello></hello>
   </div>
 </template>
