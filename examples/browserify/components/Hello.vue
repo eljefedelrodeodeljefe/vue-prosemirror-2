@@ -70,6 +70,7 @@ export default {
 section {
   min-width: 30rem;
   max-width: 50rem;
+  margin-bottom: 10em;
 }
 
 .el-select {
