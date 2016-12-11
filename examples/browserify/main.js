@@ -3,7 +3,7 @@
 // This is done with the browser options. For the config, see package.json
 import Vue from 'vue'
 import App from './App.vue'
-import ProseMirror from '../../../'
+import ProseMirror from '../../'
 
 Vue.use(ProseMirror)
 
