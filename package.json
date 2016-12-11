@@ -11,7 +11,7 @@
   "homepage": "https://eljefedelrodeodeljefe.github.com/vue-prosemirror-2",
   "main": "./index.js",
   "scripts": {
-    "dev:watchify": "watchify -vd -p browserify-hmr -e examples/browserify/main.js -o dist/build.js",
+    "dev:watchify": "watchify -vd -g envify -p browserify-hmr -e examples/browserify/main.js -o dist/build.js",
     "dev:serve": "cd dist && http-server -o -c 1 -a localhost",
     "dev": "npm-run-all --parallel dev:watchify dev:serve",
     "lint": "eslint index.js",
@@ -64,6 +64,7 @@
     "proxyquireify": "^3.0.1",
     "uglify-js": "^2.5.0",
     "vue": "^2.0.1",
+    "vue-ua": "^1.1.2",
     "vueify": "^9.0.0",
     "watchify": "^3.4.0"
   }
