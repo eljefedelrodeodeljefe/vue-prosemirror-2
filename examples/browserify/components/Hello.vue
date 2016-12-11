@@ -8,6 +8,20 @@
       </el-option>
     </el-select>
     <prosemirror :mode="mode"></prosemirror>
+    <br>
+    <el-table
+      :data="tableData"
+      style="width: 100%">
+      <el-table-column
+        prop="parameter"
+        label="Parameter"
+        width="180">
+      </el-table-column>
+      <el-table-column
+        prop="values"
+        label="Values">
+      </el-table-column>
+    </el-table>
   </section>
 </template>
 
@@ -16,6 +30,16 @@
 export default {
   data () {
     return {
+      tableData: [
+        {
+          parameter: 'mode',
+          values: ['all', 'editor', 'markdown'].join(', ')
+        },
+        {
+          parameter: 'initial-markdown',
+          values: `:initial-markdown="someVar", as string: initial-markdown="**text**"`
+        }
+      ],
       options: [
         {
           value: 'markdown',

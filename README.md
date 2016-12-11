@@ -4,6 +4,32 @@ Plugin to integrate prosemirror with Vue 2
 
 [![Build Status](https://travis-ci.org/eljefedelrodeodeljefe/vue-prosemirror-2.svg?branch=master)](https://travis-ci.org/eljefedelrodeodeljefe/vue-prosemirror-2)
 
+## Usage
+
+```js
+import Vue from 'vue'
+import ProseMirror from 'vue-prosemirror-2'
+import App from './App.vue'
+
+Vue.use(ProseMirror)
+
+new Vue({ // eslint-disable-line no-new,
+  el: '#app',
+  render: (h) => h(App)
+})
+```
+This installs the component, which can be used as...
+
+```html
+<prosemirror mode="all"></prosemirror>
+```
+
+| parameter        | values                                                                          |
+|------------------|---------------------------------------------------------------------------------|
+| `mode`           | `all`, `editor`, `markdown`                                                     |
+| `initial-markdown` | binding `:initial-markdown="someVar"`, as string: `initial-markdown="**text**"` |
+
+
 ## Build Setup
 
 ``` bash
