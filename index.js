@@ -287,6 +287,21 @@ textarea {
   display: none;
 }
 
+textarea.vue-prosemirror,
+.vue-prosemirror div.ProseMirror-content {
+  border: none;
+  overflow: auto;
+  outline: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+textarea.vue-prosemirror {
+  margin: 0;
+  padding: 0;
+}
 `
 
 exports.install = function (Vue, options) {
