@@ -355,6 +355,11 @@ exports.install = function (Vue, options) {
         }
         this.$emit('content-change-markdown')
       })
+
+      if (this.initialMarkdown) {
+        this.content.markdown = this.initialMarkdown
+        this.$emit('_content-change-markdown')
+      }
     },
     methods: {
       'setupProseMirror': function (content, editor) {
@@ -399,6 +404,9 @@ exports.install = function (Vue, options) {
         default: 'vue-prosemirror',
         type: String,
         required: false
+      },
+      'initial-markdown': {
+        type: String
       }
     },
     watch: {
