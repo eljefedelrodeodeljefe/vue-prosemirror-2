@@ -3,7 +3,7 @@
   "version": "0.3.1",
   "description": "Plugin to integrate prosemirror with Vue 2",
   "author": "Robert Jefe Lindstaedt <robert.lindstaedt@gmail.com>",
-  "licence": "MIT",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/eljefedelrodeodeljefe/vue-prosemirror-2.git"
