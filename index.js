@@ -301,9 +301,9 @@ exports.install = function (Vue, options) {
   Vue.component('prosemirror', {
     name: 'prosemirror',
     template: `
-      <div>
-        <div v-show="mode === 'editor' || mode ==='all'" id="editor"></div>
-        <textarea v-show="mode === 'markdown' || mode ==='all'" v-model="content.markdown"></textarea>
+      <div v-bind:class="name">
+        <div  v-bind:class="name" v-show="mode === 'editor' || mode ==='all'" id="editor"></div>
+        <textarea  v-bind:class="name" v-show="mode === 'markdown' || mode ==='all'" v-model="content.markdown"></textarea>
       </div>`,
     data () {
       return {
@@ -312,7 +312,8 @@ exports.install = function (Vue, options) {
           editor: ''
         },
         editor: {},
-        view: {}
+        view: {},
+        name: 'vue-prosemirror'
       }
     },
     mounted () {
