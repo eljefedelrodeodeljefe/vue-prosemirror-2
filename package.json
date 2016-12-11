@@ -17,7 +17,8 @@
     "lint": "eslint index.js",
     "test": "karma start karma.conf.js",
     "deploy": "npm run build && gh-pages -d dist",
-    "build": "NODE_ENV=production browserify -g envify -p [ vueify/plugins/extract-css -o dist/build.css ] -e examples/browserify/main.js | uglifyjs -c warnings=false -m > dist/build.js"
+    "build": "NODE_ENV=production browserify -g envify -p [ vueify/plugins/extract-css -o dist/build.css ] -e examples/browserify/main.js | uglifyjs -c warnings=false -m > dist/build.js",
+    "postversion": "TAG=$(echo $(git describe --tags $(git rev-list --tags --max-count=1))) && git tag -a $TAG $TAG -f -m \"$(git log `git describe --tags --abbrev=0 HEAD^`..HEAD --oneline)\" && git push && git push --tags && npm run deploy"
   },
   "browserify": {
     "transform": [
