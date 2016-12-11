@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "description": "Plugin to integrate prosemirror with Vue 2",
   "author": "Robert Jefe Lindstaedt <robert.lindstaedt@gmail.com>",
+  "licence": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eljefedelrodeodeljefe/vue-prosemirror-2.git"
+  },
+  "homepage": "https://eljefedelrodeodeljefe.github.com/vue-prosemirror-2",
   "main": "./index.js",
   "scripts": {
     "dev:watchify": "watchify -vd -p browserify-hmr -e examples/browserify/main.js -o dist/build.js",
