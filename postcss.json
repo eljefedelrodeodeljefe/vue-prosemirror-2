@@ -1,7 +1,7 @@
 {
   "use": ["postcss-cssnext"],
   "input": "dist/build.css",
-  "output": "dist/bundle.css",
+  "output": "dist/build.css",
   "autoprefixer": {
     "browsers": "> 3%, IE 9, IE 10, Last 2 versions"
   }
