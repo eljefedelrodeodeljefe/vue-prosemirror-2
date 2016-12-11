@@ -44,6 +44,7 @@
     "browserify": "^13.1.0",
     "browserify-hmr": "^0.3.1",
     "cross-env": "^2.0.0",
+    "element-ui": "^1.0.6",
     "envify": "^3.4.1",
     "eslint": "^3.3.0",
     "eslint-config-standard": "^5.3.5",

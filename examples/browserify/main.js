@@ -3,14 +3,17 @@
 // This is done with the browser options. For the config, see package.json
 import Vue from 'vue'
 import VueAnalytics from 'vue-ua'
+import ElementUI from 'element-ui'
 import App from './App.vue'
 import ProseMirror from '../../'
 const fs = require('fs')
 const insertCss = require('insert-css')
 insertCss(fs.readFileSync('./node_modules/normalize.css/normalize.css').toString())
+insertCss(fs.readFileSync('./node_modules/normalize.css/normalize.css').toString())
 
 const pkg = require('../../package.json')
 
+Vue.use(ElementUI)
 Vue.use(ProseMirror)
 Vue.use(VueAnalytics, {
   appName: 'vue-prosemirror-2',
