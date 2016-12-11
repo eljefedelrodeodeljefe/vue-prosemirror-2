@@ -1,0 +1,1 @@
+console.error("Error: Cannot find module '/Users/jefe/repos/vue-prosemirror/examples/browserify/main.js' from '/Users/jefe/repos/vue-prosemirror'");
