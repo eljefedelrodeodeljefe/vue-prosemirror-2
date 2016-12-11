@@ -51,4 +51,17 @@ section {
 .el-select {
   padding-bottom: 3rem;
 }
+
+</style>
+
+<style media="screen">
+textarea.vue-prosemirror.markdown,
+.vue-prosemirror.editor {
+  resize: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #8492a6;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
 </style>

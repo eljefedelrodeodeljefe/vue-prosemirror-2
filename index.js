@@ -208,7 +208,6 @@ textarea {
   padding: 1px 6px;
   top: 0; left: 0; right: 0;
   border-bottom: 1px solid silver;
-  background: white;
   z-index: 10;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -317,8 +316,8 @@ exports.install = function (Vue, options) {
     name: 'prosemirror',
     template: `
       <div v-bind:class="name">
-        <div  v-bind:class="name" v-show="mode === 'editor' || mode ==='all'"></div>
-        <textarea v-bind:class="name" v-show="mode === 'markdown' || mode ==='all'" v-model="content.markdown"></textarea>
+        <div class="editor" v-bind:class="name" v-show="mode === 'editor' || mode ==='all'"></div>
+        <textarea class="markdown" v-bind:class="name" v-show="mode === 'markdown' || mode ==='all'" v-model="content.markdown"></textarea>
       </div>`,
     data () {
       return {
