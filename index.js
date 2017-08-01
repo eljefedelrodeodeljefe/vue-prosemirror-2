@@ -346,7 +346,7 @@ exports.install = function (Vue, options) {
       })
 
       this.$on('_content-change-markdown', () => {
-        if (this.mode === 'all') {
+        if (['all', 'editor'].includes(this.mode)) {
           const state = EditorState.create({
             doc: defaultMarkdownParser.parse(this.content.markdown),
             plugins: exampleSetup({schema})
